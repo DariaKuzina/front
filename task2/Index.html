@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+
+<head>
+    <title>Task 2</title>
+    <link href="Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <table>
+        <caption>Добыча драгоценных камней</caption>
+        <tr>
+            <th></th>
+            <th>2010</th>
+            <th>2012</th>
+            <th>2014</th>
+        </tr>
+        <tr>
+            <td>Сапфиры</td>
+            <td rowspan="2" style="text-align:center">1483</td>
+            <td>4532</td>
+            <td>6743</td>
+        </tr>
+        <tr>
+            <td>Рубины</td>
+            <td>3835</td>
+            <td>7482</td>
+        </tr>
+        <tr>
+            <td>Алмазы</td>
+            <td>683</td>
+            <td colspan="2" style="text-align:center">238</td>
+        </tr>
+    </table>
+    <br/>
+    <form>
+        <caption>
+            <h1>Анкета питомца</h1>
+        </caption>
+        <fieldset>
+            <input type="text" name="breedText" id="breedText" />
+            <label for="breedText">Порода</label>
+            <br/>
+            <input type="text" name="nameText" id="nameText" />
+            <label for="breedText">Кличка</label>
+            <br/>
+
+            <select id="colorPick" name="colorPick">
+                <option selected>Тигровый</option>
+                <option>Черепаховый</option>
+                <option>Белый</option>
+                <option>Черный</option>
+                <option>Рыжий</option>
+            </select>
+            <label for="colorPick">Выберите цвет</label>
+            <br/>
+            <input type="submit" value="Отправить" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

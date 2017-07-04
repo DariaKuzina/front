@@ -1,0 +1,16 @@
+table{
+    border-style: groove;
+    width: 450px; 
+}
+
+td, th {
+    border: 1px inset;
+}
+
+fieldset{
+    border-style: none
+}
+input, select{
+    margin-bottom: 10px
+}
+
