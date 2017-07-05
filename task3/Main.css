@@ -11,7 +11,7 @@ body
     column-count: 2;
     column-gap: 40px;
     text-align: justify;
-    height: 325px;
+    height: 315px;
     width: 490px;
 }
 
@@ -19,11 +19,40 @@ body
     width: 500px
 }
 
+h1{
+    margin-left: 12mm;
+}
+
+.cPage{
+    float: right;
+}
+
+
+li {
+    margin-bottom: 1.5mm;
+    list-style-position: outside;
+    padding-left: 3mm;
+}
+
+.nostyle ul > li {
+    list-style-type: none;
+}
+
+li.nostyle {
+    list-style-type: none;
+}
+
+.scBlock{
+    height: 315px
+}
+
 .shortContent {
     float: right;
-    text-align: left
+    text-align: left;
+    margin-right: 1cm;
+    width: 350px;
 }
-.introduction{
+.fcBlock{
     clear: both
 }
 .fullContent {
