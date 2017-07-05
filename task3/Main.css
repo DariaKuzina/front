@@ -34,11 +34,7 @@ li {
     padding-left: 3mm;
 }
 
-.nostyle ul > li {
-    list-style-type: none;
-}
-
-li.nostyle {
+.nostyle ul > li, li.nostyle {
     list-style-type: none;
 }
 
