@@ -1,0 +1,41 @@
+body
+{
+    margin-left: 10mm;
+    margin-top: 5mm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8px
+}
+
+
+.intro {    
+    column-count: 2;
+    column-gap: 40px;
+    text-align: justify;
+    height: 325px;
+    width: 490px;
+}
+
+.container{
+    width: 500px
+}
+
+.shortContent {
+    float: right;
+    text-align: left
+}
+.introduction{
+    clear: both
+}
+.fullContent {
+    float: right;
+    text-align: left
+}
+
+#elisaPhoto{
+    width: 198px;
+    margin-left: 3.5mm;
+}
+#ericPhoto{
+
+    width: 225px;
+}
