@@ -1,0 +1,35 @@
+body{
+    background: #e3e3e3;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 500px;
+    margin: auto;
+    font-family: helvetica, arial, sans-serif
+}
+
+ q {
+    font-family: Times, serif; 
+    font-size: 110%;
+    font-style: italic;
+    quotes: "\00ab" "\00bb";
+   }
+
+.quote{
+    height: 45px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.source{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    text-align: right;
+    padding: 3px;    
+}
+.source::before{
+    content: "-"
+}
