@@ -43,21 +43,23 @@ li.nostyle {
 }
 
 .scBlock{
-    height: 315px
+    height: 285px
 }
 
-.shortContent {
+.pageContent {
     float: right;
     text-align: left;
     margin-right: 1cm;
     width: 350px;
 }
-.fcBlock{
-    clear: both
+
+.pageContent.nostyle{
+    width: 370px;
 }
-.fullContent {
-    float: right;
-    text-align: left
+
+.fcBlock{
+    clear: both;
+    margin-left: 22mm
 }
 
 #elisaPhoto{
