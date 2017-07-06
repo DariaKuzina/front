@@ -1,27 +1,57 @@
 /**************
-***common
+***=common
 ***************/
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
-}
-
-/**************
-***navigation
-***************/
-nav ul{
-    list-style-type: none;
-    background: #222;
-    height: 50px;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    float: left;
+}
+ul{
+    margin: 0;
+    padding: 0;
 }
 
-nav ul>li{
-    display: inline;
+.container{
+    margin-left: 130px;
+}
+
+.fa{
+    padding-right: 5px;
+}
+/**************
+***=navigation
+***************/
+
+nav{
+    background: #222;
+    padding: 1px;
+    position: relative;
+    margin: 0;
+}
+
+nav .container{
+    height: 50px;
+    line-height: 50px;
+}
+
+nav::after{
+    content: " ";
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
     padding-right: 20px;
-    line-height: 20px;
+    vertical-align: middle;
 }
 
 nav ul li a{
@@ -33,22 +63,80 @@ nav ul li a:hover, nav ul li a:active {
     color: white;
 }
 
+.menu{
+    float: left;
+}
+
 .search{
     float: right;
 }
+
+nav .button {
+    display: inline;
+}
+
 /**************
-***header
+***dropdown menu
+***************/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #222;
+    min-width: 130px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #222;
+    padding: 3px 3px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover
+ {
+     background-color: #f1f1f1;
+     color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/**************
+***=header
 ***************/
 header{
     clear: both;
-    background: yellowgreen;
+    background: yellowgreen;    
+    padding: 0;
+    margin: 0;
+}
+
+header .container{
+    height: 295px;
 }
 
 header h1{
     text-transform: capitalize;
+    margin: 0;
+}
+
+header h1, header h3{
+    color: greenyellow;
+    vertical-align: middle;
 }
 /**************
-***main
+***=main
 ***************/
 
 .main{
@@ -56,9 +144,79 @@ header h1{
 }
 
 /**************
-***basement
+***=basement
 ***************/
 .basement{
     background-color: goldenrod;
     clear: both;
+}
+
+/**************
+***=images
+***************/
+.main img {
+    display: block;
+    height: 300px;
+    max-width: 100%;
+}
+
+/**************
+***=buttons
+***************/
+.button{
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.button:hover{
+   background: #ccc;
+}
+.button a, input[type=submit]{
+    text-decoration: none;
+    color: #333;  
+}
+/**************
+***footer
+***************/
+footer a{
+    color: #337ab7;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    display: inline;
+}
+
+footer ul li::after{
+    content: '|';
+    padding: 5px;
+}
+
+footer ul li:last-child::after{
+    content: ''
+}
+
+footer .container{
+    margin-top: 10px;
+}
+/**************
+***=miscellaneous
+***************/
+.button, input, .main img{
+     border-radius: 5px;
+}
+.button, input{
+    margin: 5px 5px;
+    padding: 5px 10px;
+}
+
+.copyright{
+    color: #959595;
 }
